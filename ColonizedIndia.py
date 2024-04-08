@@ -132,9 +132,9 @@ fueling the conflict between them and the public.
     st.title(sect)
 
     ex1 = st.expander("Gang Operations and Violence")
-    
+
     c1, c2 = st.columns(2)
-    ex2, ex3 = c1.expander("Money-Grabbing Corporations"), c2.expander("Corrupt Political Figures")
+    ex2, ex3 = c1.expander("Corrupt Political Figures"), c2.expander("Money-Grabbing Corporations")
 
     ex1.subheader("Gang Operations and Violence")
     ex1.write(write1)
