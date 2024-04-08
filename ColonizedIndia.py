@@ -132,7 +132,7 @@ the others in and trapping them in a cycle of crime, minimal payment and extreme
 
     c1, c2 = st.columns(2)
 
-    ex1, ex2, ex3 = c1.expander("Corrupt Political Figures"), c1.expander("Money-Grabbing Corporations"), st.expander("Gang Operations and Violence")
+    ex1, ex2, ex3 = c1.expander("Corrupt Political Figures"), c2.expander("Money-Grabbing Corporations"), st.expander("Gang Operations and Violence")
 
     ex1.subheader("Corrupt Political Figures")    
     ex1.write(write1)
