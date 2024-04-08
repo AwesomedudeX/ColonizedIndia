@@ -92,24 +92,6 @@ if sect == "What They Got VS What They Lost":
 if sect == "The Legacy":
     
     write1 = """
-The leaders of India after it gained independence were often power-hungry and money-minded; they could be bought into illegal businesses, where
-gangs would pay them to "overlook" the gang's operations, and sometimes providing police security for these operations in black market
-industries like human trafficking, drug distribution and the dealing of firearms. This was likely due to the British's greed for
-land and power, with India being one of the victims, and they left behind a political system filled with people that cared about
-power and resources over the good of the people. However, recently, these things have started to die down, and India is in the
-process of becoming less corrupt and developing towards a stronger country, though it will likely not be able to do this on its
-own, but rather with the help of other countries.
-"""
-    write2 = """
-After the British left, money-grabbing corporations ran rampant; often they would side with large gangs to increase their income while
-offering protection and resources to the gangs. Insurance companies would often charge the poor more than the rich, as the rich had assets
-to offer, while the poor would keep paying. They would also bribe political figures and police for protection and for them to ignore
-any illegal procedures they may be using, which created lots of conflict between large companies and the public. This was likely
-due to the popularization of money by the British, as opposed to fair trade. This meant that the power-hungry higher-class of India
-would always look for ways to make money, no matter who it harmed, which - half the time - would end in bribery and illegal activity,
-fueling the conflict between them and the public.
-"""
-    write3 = """
 Gangs in India are quite common, especially in bigger cities, where a better economy is present, which is often supported by drug
 cartel, weapons distribution and human trafficking. This acts as an incentive for political figures to support these operations,
 despite any illegal aspects that they "might" have. This came as a result of both the greed of higher-class people, and the introduction
@@ -128,19 +110,38 @@ prior to their death. This might happen in front of the gang to set an example o
 the others in and trapping them in a cycle of crime, minimal payment and extremely limited chances of living a normal life.
 """
 
+    write2 = """
+The leaders of India after it gained independence were often power-hungry and money-minded; they could be bought into illegal businesses, where
+gangs would pay them to "overlook" the gang's operations, and sometimes providing police security for these operations in black market
+industries like human trafficking, drug distribution and the dealing of firearms. This was likely due to the British's greed for
+land and power, with India being one of the victims, and they left behind a political system filled with people that cared about
+power and resources over the good of the people. However, recently, these things have started to die down, and India is in the
+process of becoming less corrupt and developing towards a stronger country, though it will likely not be able to do this on its
+own, but rather with the help of other countries.
+"""
+    write3 = """
+After the British left, money-grabbing corporations ran rampant; often they would side with large gangs to increase their income while
+offering protection and resources to the gangs. Insurance companies would often charge the poor more than the rich, as the rich had assets
+to offer, while the poor would keep paying. They would also bribe political figures and police for protection and for them to ignore
+any illegal procedures they may be using, which created lots of conflict between large companies and the public. This was likely
+due to the popularization of money by the British, as opposed to fair trade. This meant that the power-hungry higher-class of India
+would always look for ways to make money, no matter who it harmed, which - half the time - would end in bribery and illegal activity,
+fueling the conflict between them and the public.
+"""
+
     st.title(sect)
 
     c1, c2 = st.columns(2)
 
     ex1, ex2, ex3 = c1.expander("Corrupt Political Figures"), c2.expander("Money-Grabbing Corporations"), st.expander("Gang Operations and Violence")
 
-    ex1.subheader("Corrupt Political Figures")    
+    ex1.subheader("Gang Operations and Violence")
     ex1.write(write1)
 
-    ex2.subheader("Money-Grabbing Corporations")
+    ex2.subheader("Corrupt Political Figures")    
     ex2.write(write2)
 
-    ex3.subheader("Gang Operations and Violence")
+    ex3.subheader("Money-Grabbing Corporations")
     ex3.write(write3)
 
 if sect == "Sources":
